@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Mengatur gaya untuk body */
+body {
+    background-color: #f5eff2; /* Warna latar belakang */
+    color: #333; /* Warna teks */
+    display: flex;
+    justify-content: center; /* Memusatkan secara horizontal */
+    align-items: center; /* Memusatkan secara vertikal */
+    min-height: 100vh; /* Mengatur tinggi minimum */
+    padding: 20px; /* Memberikan jarak di sekitar */
+}
+
+/* Gaya untuk formulir pendaftaran */
+.registration-form {
+    background-color: #cb4d9a; /* Warna latar pink*/
+    border-radius: 10px; /* Sudut bulat */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan */
+    width: 600px; /* Lebar formulir */
+    padding: 30px; /* Jarak dalam */
+}
+
+/* Judul formulir */
+.registration-form h1 {
+    font-size: 28px; /* Ukuran font judul */
+    color: #bdb4bc; /* Warna judul */
+    text-align: center; /* Rata tengah */
+    margin-bottom: 20px; /* Jarak bawah */
+    text-transform: uppercase; /* Mengubah menjadi huruf kapital */
+}
+
+/* Subjudul */
+.registration-form h2 {
+    font-size: 20px; /* Ukuran font subjudul */
+    color: #181718; /* Warna subjudul */
+    margin-bottom: 15px; /* Jarak bawah */
+    border-bottom: 2px solid #2b2227; /* Garis bawah */
+    padding-bottom: 5px; /* Jarak bawah garis */
+}
+
+/* Label input */
+.registration-form label {
+    font-size: 16px; /* Ukuran font label */
+    margin-bottom: 5px; /* Jarak bawah */
+    display: block; /* Mengatur label menjadi block */
+    color: #333333; /* Warna teks label */
+}
+
+/* Gaya untuk input dan select */
+.registration-form input,
+.registration-form select,
+.registration-form textarea {
+    font-size: 16px; /* Ukuran font input */
+    padding: 10px; /* Jarak dalam */
+    width: 100%; /* Lebar penuh */
+    border: 1px solid #7b4c4c; /* Border abu-abu */
+    border-radius: 5px; /* Sudut bulat */
+    margin-bottom: 15px; /* Jarak bawah */
+    box-sizing: border-box; /* Mengatur box sizing */
+}
+
+/* Gaya untuk tombol submit */
+.registration-form input[type="submit"] {
+    background-color: #344351; /* Warna biru untuk tombol */
+    color: white; /* Warna teks tombol */
+    border: none; /* Tanpa border */
+    padding: 15px; /* Jarak dalam */
+    font-size: 18px; /* Ukuran font tombol */
+    font-weight: bold; /* Tebal */
+    border-radius: 5px; /* Sudut bulat */
+    cursor: pointer; /* Menunjukkan pointer saat hover */
+    width: 100%; /* Lebar tombol penuh */
+    transition: background-color 0.3s ease; /* Transisi saat hover */
+}
+
+/* Efek hover untuk tombol */
+.registration-form input[type="submit"]:hover {
+    background-color: #6f3c43; /* Warna lebih gelap saat hover */
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Rental Kamera</title>
+    <link rel="stylesheet" type="text/css" href="./style.css"> 
+</head>
+<body>
+    <div class="registration-form">
+        <h1>FORMULIR RENTAL KAMERA</h1>
+        <form action="selesai.html">
+            <fieldset>
+                <h2>Informasi Penyewa</h2>
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap</label>
+                    <input type="text" name="nama" id="nama" required autofocus>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="nomor-telepon">Nomor Telepon</label>
+                    <input type="text" name="nomor-telepon" id="nomor-telepon" pattern="[0-9]{10,12}" required title="Harus Diisi dengan 10-12 angka">
+                </div>
+
+                <div class="form-group">
+                    <label for="alamat">Alamat Lengkap</label>
+                    <input type="text" name="alamat" id="alamat" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="tipe-kamera">Tipe Kamera</label>
+                    <select id="tipe-kamera" name="tipe-kamera" required>
+                        <option value="">Pilih Tipe Kamera</option>
+                        <option value="DSLR">DSLR</option>
+                        <option value="Mirrorless">Mirrorless</option>
+                        <option value="Point-and-Shoot">Point-and-Shoot</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="tanggal-sewa">Tanggal Sewa</label>
+                    <input type="date" id="tanggal-sewa" name="tanggal-sewa" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="lama-sewa">Lama Sewa (hari)</label>
+                    <input type="number" id="lama-sewa" name="lama-sewa" min="1" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="harga">Harga Sewa</label>
+                    <input type="text" id="harga" name="harga" required placeholder="Masukkan harga sewa">
+                </div>
+
+                <div class="form-group">
+                    <label for="bukti-identitas">Bukti Identitas (upload file)</label>
+                    <input type="file" id="bukti-identitas" name="bukti-identitas" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="komentar">Komentar Khusus</label>
+                    <textarea id="komentar" name="komentar" rows="4" placeholder="Masukkan komentar atau permintaan khusus"></textarea>
+                </div>
+
+                <input type="submit" value="Kirim Form">
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
